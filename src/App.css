@@ -1,33 +1,160 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "freight-big-pro";
+  src: url('./freight-text-pro-book.eot');
+  src:  url('./freight-text-pro-book.eot?#iefix') format('embedded-opentype'),
+        url('./freight-text-pro-book.woff2') format('woff2'),
+        url('./freight-text-pro-book.woff') format('woff'),
+        url('./freight-text-pro-book.ttf') format('truetype')
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css?family=Tenor+Sans');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+h2 {
+  font-family: "freight-big-pro",serif;
+  font-size: 42px;
+  position: relative;
+  margin-bottom: .4em;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 25px;
+  margin-bottom: 1em;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin: 0 0 1.4em;
+  line-height: 26px;
+  color: white;
+  font-size: 13px;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  letter-spacing: 0;
+}
+
+.App,body {
+  background-color: #14495b;
+}
+
+.app--header {
+  margin-bottom: 22px;
+  background-color: #14495b;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.app--header:before {
+  width: 95%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  height: 1px;
+  background: #fff;
+}
+
+.app--header:after {
+  width: 98%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  background: #fff;
+}
+
+#logo--image {
+  width: 100px;
+  height: auto;
+}
+
+#landing--tap-into-module {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 60px 0;
+}
+
+#tap-into-module--image {
+  width: 800px;
+}
+
+#tap-into-module--image img {
+  width: 100%;
+}
+
+#tap-into-module--text h3 {
+  margin: 15px 0;
+}
+
+#tap-into-module--text {
+  max-width: 450px;
+  margin-left: 50px;
+}
+
+#landing--instagram-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 0 0 auto;
+}
+
+#landing--instagram-photos-outer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 40px 0;
+}
+
+#tap-instagram--text {
+  width: 280px;
+}
+
+.landing-ig--image {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 1.4em;
+  cursor: pointer;
+  color: #e58a6c;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  border: 4px double #e58a6c;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#promotion--box {
+  text-align: center;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #255e71;
 }

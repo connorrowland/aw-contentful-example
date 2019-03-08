@@ -22,17 +22,24 @@ h2 {
 h3 {
   font-family: 'Tenor Sans', sans-serif;
   font-size: 25px;
-  margin-bottom: 1em;
+  margin: 10px 0;
   color: white;
 }
 
 p {
   margin: 0 0 1.4em;
-  line-height: 26px;
+  line-height: 24px;
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
   letter-spacing: 0;
+}
+
+.App {
+  padding-bottom: 60px;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .App,body {
@@ -90,7 +97,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 0 60px 0;
 }
@@ -103,13 +109,9 @@ p {
   width: 100%;
 }
 
-#tap-into-module--text h3 {
-  margin: 15px 0;
-}
-
 #tap-into-module--text {
   max-width: 450px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 #landing--instagram-photos {
@@ -121,7 +123,6 @@ p {
 }
 
 #landing--instagram-photos-outer {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +131,7 @@ p {
 }
 
 #tap-instagram--text {
-  width: 280px;
+  width: 350px;
 }
 
 .landing-ig--image {
@@ -157,4 +158,171 @@ p {
   width: 100%;
   padding: 80px 0;
   background-color: #255e71;
+}
+
+@media(max-width: 1250px) {
+  #landing--instagram-photos {
+    max-width: 700px;
+  }
+  .landing-ig--image {
+    width: 215px;
+    height: 215px;
+  }
+  #landing--tap-into-module {
+    padding: 40px 0;
+  }
+}
+
+@media(max-width: 1150px) {
+  #landing--instagram-photos {
+    max-width: 600px;
+  }
+  .landing-ig--image {
+    width: 185px;
+    height: 185px;
+  }
+  .App {
+    max-width: 1100px;
+  }
+}
+
+@media(max-width: 1050px) {
+  #landing--instagram-photos {
+    max-width: 500px;
+  }
+  .landing-ig--image {
+    width: 150px;
+    height: 150px;
+  }
+  #tap-into-module--image {
+    width: 600px;
+  }
+  .App {
+    max-width: 950px;
+  }
+}
+
+@media(max-width: 992px) {
+  #tap-instagram--text {
+    width: 325px;
+  }
+  .App {
+    max-width: 768px;
+  }
+  #tap-into-module--text {
+    margin-left: 30px;
+  }
+  #tap-into-module--image {
+    width: 450px;
+    height: 380px;
+    overflow: hidden;
+  }
+  #tap-into-module--image img {
+    width: auto;
+    height: 100%;
+  }
+  #landing--instagram-photos {
+    max-width: 395px;
+  }
+  .landing-ig--image {
+    width: 185px;
+    height: 185px;
+  }
+}
+
+@media(max-width: 768px) {
+  .App {
+    max-width: 605px;
+  }
+  #landing--tap-into-module {
+    flex-direction: column;
+  }
+  #tap-into-module--image {
+    width: 100%;
+    height: 380px;
+  }
+  #tap-into-module--image img {
+    width: 100%;
+    height: auto;
+  }
+  #tap-into-module--text {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+  #landing--tap-into-module {
+    padding: 15px 0;
+  }
+  #landing--instagram-photos-outer {
+    flex-direction: column-reverse;
+  }
+  #landing--instagram-photos {
+    max-width: 100%;
+  }
+  #tap-instagram--text {
+    width: 100%;
+  }
+  #promotion--box h2 {
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+  }
+}
+@media(max-width: 610px) {
+  .App {
+    max-width: 590px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .App {
+    max-width: 510px;
+  }
+  #tap-into-module--image {
+    height: 330px;
+  }
+  .landing-ig--image {
+    width: 150px;
+    height: 150px;
+  }
+  #tap-into-module--text {
+    margin-top: 20px;
+  }
+  #logo--image {
+    width: 85px;
+  }
+}
+@media(max-width: 550px) {
+  .App {
+    max-width: 385px;
+  }
+  #tap-into-module--image {
+    height: 250px;
+  }
+  .landing-ig--image {
+    width: 115px;
+    height: 115px;
+  }
+}
+@media(max-width: 410px) {
+  .App {
+    max-width: 300px;
+    padding-bottom: 45px;
+  }
+  #tap-into-module--image {
+    height: 200px;
+  }
+  .landing-ig--image {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+  #landing--instagram-photos {
+    max-width: 300px;
+  }
+  #landing--instagram-photos-outer {
+    padding: 0 0 20px 0;
+  }
 }

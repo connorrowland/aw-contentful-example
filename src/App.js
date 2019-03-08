@@ -36,7 +36,7 @@ class App extends Component {
           landingSectionOneSubtitle: response.fields.landingSectionOneSubtitle,
           landingSectionTwoBody: response.fields.landingSectionTwoBody,
           landingSectionTwoSubtitle: response.fields.landingSectionTwoSubtitle,
-          landingSectionTwoTitle: response.fields.landingSectionTwoTitleurl,
+          landingSectionTwoTitle: response.fields.landingSectionTwoTitle,
           igPosts: response.fields.igPosts,
           footerPromotion: response.fields.footerPromotion
         })
@@ -45,8 +45,8 @@ class App extends Component {
   }
 
   generateIGPosts() {
-    const posts = this.state.igPosts.map((post) =>
-      <img src={post.fields.file.url} alt="IG Post" className="landing-ig--image" />
+    const posts = this.state.igPosts.map((post, i) =>
+      <img key={i} src={post.fields.file.url} alt="IG Post" className="landing-ig--image" />
     );
     return posts
   }
